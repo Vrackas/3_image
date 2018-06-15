@@ -50,11 +50,11 @@ body {
         border-radius: 5px;
         position: relative; }
     body section .body_item:nth-child(1) div {
-      background-image: url("image/1.jpg");
+      background-image: url("image/2.jpg");
       background-size: cover;
       background-position: center; }
     body section .body_item:nth-child(2) div {
-      background-image: url("image/2.jpg");
+      background-image: url("image/1.jpg");
       background-size: cover;
       background-position: center; }
     body section .body_item:nth-child(3) div {

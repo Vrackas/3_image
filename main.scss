@@ -63,7 +63,7 @@ body {
     .body_item:nth-child(1) div{
 
         background: {
-          image: url("image/1.jpg");
+          image: url("image/2.jpg");
           size: cover;
           position: center;
         }
@@ -73,7 +73,7 @@ body {
     }
     .body_item:nth-child(2) div{
         background: {
-          image: url("image/2.jpg");
+          image: url("image/1.jpg");
           size: cover;
           position: center;
         }
