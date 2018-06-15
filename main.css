@@ -2,30 +2,35 @@ body {
   width: 100%;
   height: 100vh;
   font-family: "Roboto", sans-serif;
+  margin: 0;
   color: #efefef; }
   body section {
-    width: 960px;
+    width: 100%;
     margin: 0 auto;
-    height: 500px;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row; }
     body section .body_item {
-      width: 300px;
-      height: 450px;
+      width: 33.333%;
+      height: 100vh;
       box-sizing: border-box;
-      padding: 0px 0px 20px 0px;
+      padding: 0;
       text-align: center;
       position: relative;
       transition: 1s all;
-      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3); }
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
       body section .body_item h3 {
         font-weight: bold;
         z-index: 5;
         position: relative;
-        margin-top: 80px; }
+        transition: .9s all; }
       body section .body_item div {
+        margin: 0;
         width: 100%;
         height: 100%;
         position: absolute;
@@ -37,7 +42,6 @@ body {
         z-index: 5;
         margin: 80px 0 100px; }
       body section .body_item a {
-        margin-top: 80px;
         z-index: 5;
         font-size: 13px;
         text-decoration: none;
@@ -48,6 +52,9 @@ body {
         padding: 10px 25px;
         transition: all 0.3s ease-in-out;
         border-radius: 5px;
+        display: block;
+        width: max-content;
+        margin: 0 auto;
         position: relative; }
     body section .body_item:nth-child(1) div {
       background-image: url("image/2.jpg");
@@ -56,13 +63,28 @@ body {
     body section .body_item:nth-child(2) div {
       background-image: url("image/1.jpg");
       background-size: cover;
-      background-position: center; }
+      background-position: center;
+      filter: brightness(30%); }
     body section .body_item:nth-child(3) div {
       background-image: url("image/3.jpg");
       background-size: cover;
       background-position: center; }
-    body section .body_item:hover {
-      transition: .5s all;
-      box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.6); }
+    body section .body_item:hover h3 {
+      transition: .9s all;
+      font-size: 30px; }
+  @media (min-width: 540px) and (max-width: 768px) {
+    body section {
+      flex-direction: column; }
+      body section .body_item {
+        width: 100%;
+        height: 100vh;
+        min-height: 100vh; } }
+  @media (max-width: 540px) {
+    body section {
+      flex-direction: column; }
+      body section .body_item {
+        width: 100%;
+        height: 100vh;
+        min-height: 100vh; } }
 
 /*# sourceMappingURL=main.css.map */
